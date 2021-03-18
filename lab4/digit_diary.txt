@@ -1,0 +1,10 @@
+Running tests for user md374
+Test 1: passed: digit_sum(        1) returns 1
+Test 2: passed: digit_sum(       15) returns 6
+Test 3: passed: digit_sum(      354) returns 3
+Test 4: passed: digit_sum(     5803) returns 7
+Test 5: passed: digit_sum(    85291) returns 7
+Test 6: passed: digit_sum(   293439) returns 3
+Test 7: passed: digit_sum(  1378324) returns 1
+Test 8: passed: digit_sum( 95007602) returns 2
+Test 9: passed: digit_sum(960477756) returns 6

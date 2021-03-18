@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}P\&E 4.46}{2}% 
+\contentsline {section}{\numberline {2}P\&E 4.49}{2}% 
+\contentsline {section}{\numberline {3}Chapra 4.25}{2}% 
+\contentsline {section}{\numberline {4}Finding Roots}{2}% 
+\contentsline {section}{\numberline {A}Codes}{4}% 
+\contentsline {subsection}{\numberline {A.1}swap\_letters.py}{4}% 
+\contentsline {subsection}{\numberline {A.2}scrambler.py}{5}% 
+\contentsline {subsection}{\numberline {A.3}cos\_series.py}{6}% 
+\contentsline {subsection}{\numberline {A.4}poly\_root.py}{8}% 
+\contentsline {section}{\numberline {B}Figures}{9}% 

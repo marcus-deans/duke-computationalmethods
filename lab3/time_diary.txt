@@ -1,0 +1,11 @@
+Running tests for user md374
+Test  1: runs: hms(61870) returns (17, 11, 10)
+Test  2: runs: hms(40687) returns (11, 18,  7)
+Test  3: runs: hms(46524) returns (12, 55, 24)
+Test  4: runs: hms(56475) returns (15, 41, 15)
+Test  5: runs: hms(20202) returns ( 5, 36, 42)
+Test  6: runs: hms(49126) returns (13, 38, 46)
+Test  7: runs: hms(46334) returns (12, 52, 14)
+Test  8: runs: hms(75291) returns (20, 54, 51)
+Test  9: runs: hms(62367) returns (17, 19, 27)
+Test 10: runs: hms(75832) returns (21,  3, 52)

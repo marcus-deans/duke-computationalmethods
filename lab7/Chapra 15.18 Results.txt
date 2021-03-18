@@ -1,0 +1,71 @@
+[0,0]
+Coefficients:
+-237.91544562038067
+0.0
+Statistics
+St - Sum of Residual Squares: 0.246
+Sr - Sum of Squares of Estimate Residuals: 0.000
+R Squared Value: 1.000
+
+[100,0]
+Coefficients:
+-237.91544562220946
+0.0
+Statistics
+St - Sum of Residual Squares: 0.246
+Sr - Sum of Squares of Estimate Residuals: 0.000
+R Squared Value: 1.000
+
+[0,100]
+Coefficients:
+-230.56265400388943
+-123891.53160037543
+Statistics
+St - Sum of Residual Squares: 0.246
+Sr - Sum of Squares of Estimate Residuals: 0.000
+R Squared Value: 1.000
+
+[100,100]
+Coefficients:
+-230.56275213116947
+-123889.8570599825
+Statistics
+St - Sum of Residual Squares: 0.246
+Sr - Sum of Squares of Estimate Residuals: 0.000
+R Squared Value: 1.000
+
+[0,0]
+Coefficients:
+-0.23056272846818715
+-0.12389023492437519
+Statistics
+St - Sum of Residual Squares: 0.246
+Sr - Sum of Squares of Estimate Residuals: 0.000
+R Squared Value: 1.000
+
+[0.1,0]
+-0.23056266649180876
+-0.12389132164110642
+Statistics
+St - Sum of Residual Squares: 0.246
+Sr - Sum of Squares of Estimate Residuals: 0.000
+R Squared Value: 1.000
+
+[0,0.0001]
+Coefficients:
+-0.2305626942759563
+-0.12389082006838026
+Statistics
+St - Sum of Residual Squares: 0.246
+Sr - Sum of Squares of Estimate Residuals: 0.000
+R Squared Value: 1.000
+
+[0.1,0.0001]
+Coefficients:
+-0.23056275213116953
+-0.12388985705998222
+Statistics
+St - Sum of Residual Squares: 0.246
+Sr - Sum of Squares of Estimate Residuals: 0.000
+R Squared Value: 1.000
+

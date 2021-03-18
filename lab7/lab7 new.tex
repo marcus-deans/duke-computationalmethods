@@ -1,0 +1,233 @@
+%% IMPORTANT: Once working, run latex 3 times to get listoffigures to work
+
+%% Be sure to check spelling!
+
+%% Put your name and the proper due date in place
+
+%% Copy the lstinputlisting and figure code as many times as you need
+%% Be sure to put in your own file names if appropriate
+
+%% Note that the \epsfig and \lstinputlisting commands
+%% are currently commented out with %%% - until the
+%% files exist, processing this code without them will result in an error
+%% so leave the comments until you have created the files!
+
+\documentclass{article}
+\usepackage{amsmath}    % loads AMS-Math package
+\usepackage{epsfig}     % allows PostScript files
+\usepackage{listings}   % allows lstlisting environment
+\usepackage{moreverb}   % allows listinginput environment
+\usepackage[letterpaper, margin=0.75in]{geometry}  % set paper size/margins
+\usepackage{EGR103F19}  % colorful file imports
+
+\begin{document}
+\begin{center}
+\rule{6.5in}{0.5mm}\\~\\
+\textbf{\large EGR 103L -- Fall 2019}\\~\\
+\textbf{\huge Laboratory 7 - Curve Fitting}\\~\\
+Marcus Deans (md374)\\
+EGR103L, Section 4, Tuesdays 11:45-2:35\\
+10 November, 2019\\~\\
+{\small I have adhered to the Duke Community Standard in completing
+  this assignment.  I understand that a violation of the Standard can
+  result in failure of this assignment, failure of this course, and/or
+  suspension from Duke University.} 
+\rule{6.5in}{0.5mm}\\
+\end{center}
+\tableofcontents
+\listoffigures
+\renewcommand{\arraystretch}{1.5}
+\clearpage
+
+\section{Chapra 14.5}
+\begin{center}
+\begin{tabular}{l|c|c|c|c|c|c}
+Case & Equation & $S_t$ & $S_r$ & $r^2$ & $s$ & $r$ \\ \hline
+$y$ vs. $x$ & $y=0.359x + 4.89$ & 5.410e01 & 5.795 & 8.930e-01 & 8.510e-01 & 9.450e-01\\ 
+$x$ vs. $y$ & $x=2.49y -11.1$ & 3.745e02 & 4.012e01 & 8.930e-01 & 2.239 & 9.450e-01
+\end{tabular}
+\end{center}
+%%% discussion 
+The two models, effectively being reversed version of one another, yielded similar results. The coefficient of determination was identical for both at 8.930e-01, demonstrating that both models had equal correlation to the actual data values. This showed the equality between the two models in that both were equally "good" at predicting the results. The Sum of Residual Squares $S_t$ and Sum of Squares of Estimate Residuals $S_r$ were different for the two models. It was noted that the difference was primary by one order of magnitude, with the values for x vs. y being approximately ten times larger than the respective value for the y vs. x model. This had the result of a substantially larger standard error of the estimate for the x vs. y plot, with $s_{x/y}$ again being ten times larger than $s_{y/x}$. This would suggest that the case of y vs. x is a superior model in minimizing the magnitude of these statistical measures. 
+
+\section{Chapra 14.7}
+\begin{center}
+\begin{tabular}{c|c|c|c}
+$S_t$ & $S_r$ & $r^2$ & 
+$R$, N m mol$^{-1}$ K$^{-1}$ or J  mol$^{-1}$ K$^{-1}$\\ \hline
+2.455e07 & 8.018e03 &  9.997e-01 & 8.3162 J  mol$^{-1}$ K$^{-1}$
+\end{tabular}
+\end{center}
+As per the Committee on Data for Science and Technology (CODATA), the value of the Gas Constant R is 8.3145  J  mol$^{-1}$ K$^{-1}$. Therefore, the estimate calculated via the program was highly accurate, yielding a result accurate to the hundredths place. While the difference between the two is nonetheless relevant, particularly for large calculations, it shows the viability of the polyfit method used to calculate this result. The percent accuracy, calculated by $\frac{(experimental-ideal)}{ideal} * 100$ found that the percent error of the calculation was 0.02\%. Again, this shows the calculation was quite accurate. 
+
+\section{Chapra 14.27}
+\begin{center}
+\begin{tabular}{l|c|c|c|c|c|c}
+Case & Equation & $S_t$ & $S_r$ & $r^2$ & $i(3.5)$, A\\ \hline
+Polyfit & $i=2.81x-0.592$ & 3.381e02 & 2.921e-01 & 9.991e-01 &  9.24 \\ 
+Genlin & $i=2.71x$ & 3.380e02 & 7.362e-01 & 9.978e-01 & 9.51
+\end{tabular}
+\end{center}
+When the intercept was set to zero in the second model, thereby reducing the equation to a single term, the predictive power in the model declined in that the coefficient of determination decreased from 0.999 to 0.998. This difference, albeit small relative to the overall value, still demonstrates the difference that this term creates and the constantly increasing accuracy with a higher number of terms. The intercept provided an "anchor" for the line that comprised the rest of the graph, and allowed the polyfit model to better fit the data. The current prediction for 3.5V changed similarly, with the polyfit model yielding a value of 9.24 as opposed to 9.51. This difference of ~0.3 Amperes may be significant and could cause substantial impact on the given circuit. Overall, this exercise reinforced the veracity of using a higher-term model to fit the graph. Also, the decision was made to increase the range of the x-model values to comprise values from 0 to 10 in order to better illustrate the "zero-intercept" nature of one model as opposed to the polyfit model.
+\pagebreak
+\section{Chapra 15.10}
+Based on the least squares fit of the given model,
+\begin{align*}
+p(t)&=4.14e^{-1.5t} + 2.90e^{-0.3t} + 1.53e^{-0.05t}
+\end{align*}
+
+The statistical and information required by the problem is:
+\begin{center}
+\begin{tabular}{c|c|c}
+$S_t$ & $S_r$ & $r^2$\\ \hline
+ 2.040e01 &8.000e-02 & 9.960e-01 \\
+\end{tabular}
+\end{center}
+This is a mathematically sound model in that the overall organism count (comprised of the sum of each individual organism's growth rate) is closely modeled by the equation, with a coefficient of determination of 0.996. While there is some room for improvement, potentially with higher order terms or different modeling methods, this is overall an effective modeling method that accurately represents the situation. 
+
+\section{Chapra 15.10 Alternate}
+Based on the least squares fit of the given model,
+\begin{align*}%%% replace A, B, and C below
+p(t)&=5.63e^{-1.5t} - 4.43e^{-0.3t} + 7.89e^{-0.2t}
+\end{align*}
+
+The statistical and specific information required by the problem is:
+\begin{center}
+\begin{tabular}{c|c|c}
+$S_t$ & $S_r$ & $r^2$\\ \hline
+2.040e01 & 8.000e-02 & 9.960e-01\\
+\end{tabular}
+\end{center}
+Mathematically, this is an effective model as previously described, particularly above regarding Chapra 15.10. The coefficient of determination is equal to the that of Chapra 15.10's model at 0.996. However, this model is scientifically \textit{inaccurate}, given that one of the organisms is shown with a negative concentration, which is impossible. Such cases satisfiy the mathematical model but do not take into account the facts on the ground and the physical existence of organisms on the plate.
+
+\section{Chapra 15.11}
+The model equation is:
+\begin{align*} % replace NUM with correct values
+P&=P_m\frac{I}{I_{sat}}e^{-\frac{I}{I_{sat}}-1}=
+238.71\frac{I}{221.82}e^{-\frac{I}{221.82}-1}
+\end{align*}
+with $P_m$ measured in (mg m$^{-3}$ d$^{-1}$) and $I_{sat}$ measured
+in ($\mu$E m$^{-2}$ s$^{-1}$).
+The statistical and information required by the problem is:
+\begin{center}
+\begin{tabular}{c|c|c}
+$S_t$ & $S_r$ & $r^2$\\ \hline
+2.837e04 & 1.116e03 & 9.610e-01 \\
+\end{tabular}
+\end{center}
+For the initial guess, I started with a completely random choice based roughly on values that seemed to be consistent with the provided data; ie. values that would "fit in" by being within the range of the x-values of a given pair, and also within the y-values of that same pair. This yielded a guess of [200,200]. The graph was created, and based on the observed peak of the graph, the estimate was revised to be closer to the visual result. I realized that the graph had indeed been able to yield its complete (ie. fully accurate in the scope of the model and predicting as best possible given the parameters) value based on the initial estimate, and the revised estimate was not in fact necessary. Mathematically, this model was sound with its high coefficient of determination of 0.961, representing high correlation between the actual values and the model and showing its efficacy as a predictor.
+ 
+\section{Chapra 15.18}
+The model equation is:
+\begin{align*}
+P&=\frac{RT}{V} + \frac{RTA_1}{V^2} + \frac {RTA_2}{V^3}
+\end{align*}
+Data table:
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|} \hline
+\multicolumn{4}{|c|}{Using mL for $V$} & 
+\multicolumn{6}{|c|}{Using L for $V$}\\
+\multicolumn{2}{|c|}{Initial Guesses} & 
+\multicolumn{2}{|c|}{Estimates} & 
+\multicolumn{2}{|c|}{Initial Guesses} & 
+\multicolumn{2}{|c|}{Estimates} & 
+\multicolumn{2}{|c|}{Estimates (converted)} \\ 
+$A_1$ (mL) & $A_2$ (mL)$^2$  & $A_1$ (mL)  & $A_2$ (mL)$^2$  & $A_1$ (L)  &
+$A_2$ (L)$^2$ & $A_1$ (L) & $A_2$ (L)$^2$  & $A_1$ (mL) & $A_2$ (mL)$^2$  \\ \hline
+0   & 0   & -237.92 & 0 & 0   & 0  & -0.23056 & -0.12389 & -230.56 & -12389e1\\
+1e2 & 0   & -237.92 & 0 & 1e-01 & 0  & -0.23056 & -0.12389 & -230.56 & -12389e1 \\
+0   & 1e2 & -230.56 & -12389e1 & 0   & 1e-4 & -0.23056 & -0.12389 & -230.56 & -12389e1 \\
+1e2 & 1e2 & -230.56 & -12389e1 & 1e-01 & 1e-4 & -0.23056 & -0.12389 & -230.56 & -12389e1 \\ \hline
+\end{tabular}
+\end{center}
+% Discussion
+I would choose the $A_1$ and $A_2$ values obtained with an initial guess of $1e-01 L$, $1e-04 L$. The resulting values appear to be the most consistent with the rest of the calculations. Specifically, the $A_1$ value is common not only with all of the calculations in litres (including $A_1$ guesses of both $0$ and $1e-01$), but also the same as the calculated $A_1$ in two of the mL based calcualtions, when $A_2 = 1e2$. Furthermore, the calculated $A_2$ value for the initial guess of $1e-01$, $1e-04$ was again the same as for the rest of the L based calculations. This value is also identical to the $A_2$ value found in the mL calcualtion, when the initial guess for $A_2$ was $1e2$. More investigation would be necessary to ascertain which initial guess is indeed correct, going beyond simple relative comparisons. The values for the calculations vary due to the use of nonlinear regression, which is premised upon an initial guess that considerably affects the result. Therefore, the optimization procedure ascertains a different mathematical model depending on where the model "starts at", which is inputted as the initial guess.
+
+\pagebreak
+\appendix
+\section{Codes}
+% Put the name of your file in the subsection name 
+% and the listinginput input
+% Be sure to include the community standard in codes!
+% Add \pagebreaks if they make sense
+% Make as many copies as you need
+\lstset{style=python103, language=python} 
+
+\subsection{Chapra 14.5}
+\lstinputlisting{Chapra 14.5.py}
+\pagebreak
+
+\subsection{Chapra 14.7}
+\lstinputlisting{Chapra 14.7.py}
+\pagebreak
+
+\subsection{Chapra 14.27}
+\lstinputlisting{Chapra 14.27.py}
+\pagebreak
+
+\subsection{Chapra 15.10}
+\lstinputlisting{Chapra 15.10.py}
+\pagebreak
+
+\subsection{Chapra 15.10 Alternate}
+\lstinputlisting{Chapra 15.10 Alternate.py}
+\pagebreak
+
+\subsection{Chapra 15.11}
+\lstinputlisting{Chapra 15.11.py}
+\pagebreak
+
+\subsection{Chapra 15.18}
+\lstinputlisting{Chapra 15.18.py}
+\pagebreak
+
+
+\section{Figures}
+% Make as many as needed; change sizes if it makes sense to do so
+\begin{figure}[h!]
+\begin{center}
+\epsfig{file=Y vs. X.eps, width=5in}
+\epsfig{file=X vs. Y.eps, width=5in}
+\caption{Chapra 14.5}
+\end{center}
+\end{figure}
+
+\begin{figure}[htb!]
+\begin{center}
+\epsfig{file=Pressure vs. Temperature.eps, width=5in}
+\caption{Chapra 14.7}
+\end{center}
+\end{figure}
+
+\begin{figure}[htb!]
+\begin{center}
+\epsfig{file=Polyfit vs. Zero-Intercept.eps, width=5in}
+\caption{Chapra 14.27}
+\end{center}
+\end{figure}
+
+\begin{figure}[htb!]
+\begin{center}
+\epsfig{file=Time vs. Concentration Alpha.eps, width=5.in} \\
+\epsfig{file=Time vs. Concentration Bravo.eps, width=5.in}
+\caption{Chapra 15.10 and 15.10 Alternate}
+\end{center}
+\end{figure}
+
+\begin{figure}[htb!]
+\begin{center}
+\epsfig{file=Solar Radiation vs. Photosynthesis Rate.eps, width=5in}
+\caption{Chapra 15.11}
+\end{center}
+\end{figure}
+
+\begin{figure}[htb!]
+\begin{center}
+\epsfig{file=Test Graph.eps, width=5in}
+\caption{Chapra 15.18}
+\end{center}
+\end{figure}
+
+\end{document}
+
+% LocalWords:  EGR 103L Chapra untransformed Linearized 103L DATEDUE

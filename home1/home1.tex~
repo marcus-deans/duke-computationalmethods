@@ -1,0 +1,9 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{listings}
+\usepackage{letterpaper, margin=0.75in}{geometry}
+\usepackage{EGR103F19}
+\begin{document}
+
+\

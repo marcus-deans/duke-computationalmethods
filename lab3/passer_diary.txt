@@ -1,0 +1,11 @@
+Running tests for user md374
+Test  1: runs: ysp(  1,   0,   0,   0,   0) returns  39.58
+Test  2: runs: ysp(  6,   6,  27,   4,   0) returns 125.00
+Test  3: runs: ysp(  9,   3,  32,   0,   6) returns   5.09
+Test  4: runs: ysp(  6,   3,  41,   3,   3) returns  72.22
+Test  5: runs: ysp(  2,   2,  16,   0,   0) returns 100.00
+Test  6: runs: ysp(  9,   3,  18,   3,   6) returns  42.36
+Test  7: runs: ysp(  8,   1,   3,   1,   5) returns  39.58
+Test  8: runs: ysp(  1,   0,   0,   0,   1) returns   0.00
+Test  9: runs: ysp(  9,   9, 152,   6,   0) returns 158.33
+Test 10: runs: ysp(  4,   4,  31,   1,   0) returns 138.54

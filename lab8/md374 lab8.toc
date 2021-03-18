@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Chapra 2.22}{2}% 
+\contentsline {section}{\numberline {2}Chapra 3.9}{2}% 
+\contentsline {section}{\numberline {3}Chapra 15.5}{2}% 
+\contentsline {section}{\numberline {4}Chapra 15.6}{2}% 
+\contentsline {section}{\numberline {5}Chapra 15.7}{2}% 
+\contentsline {section}{\numberline {6}Sphere}{3}% 
+\contentsline {section}{\numberline {A}Codes}{4}% 
+\contentsline {subsection}{\numberline {A.1}Chapra 2.22}{4}% 
+\contentsline {subsection}{\numberline {A.2}Chapra 3.9}{5}% 
+\contentsline {subsection}{\numberline {A.3}Chapra 15.5}{6}% 
+\contentsline {subsection}{\numberline {A.4}Chapra 15.6}{7}% 
+\contentsline {subsection}{\numberline {A.5}Chapra 15.7}{9}% 
+\contentsline {subsection}{\numberline {A.6}Sphere}{11}% 
+\contentsline {section}{\numberline {B}Figures}{12}% 

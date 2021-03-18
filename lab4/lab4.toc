@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Sinusoids}{2}% 
+\contentsline {section}{\numberline {2}P\&E 4.48}{2}% 
+\contentsline {section}{\numberline {3}P\&E 2.38}{2}% 
+\contentsline {section}{\numberline {4}Chapra Problem 3.10}{3}% 
+\contentsline {section}{\numberline {5}Geometric Progression}{3}% 
+\contentsline {section}{\numberline {A}Codes}{4}% 
+\contentsline {subsection}{\numberline {A.1}Sinusoidal\_.py}{4}% 
+\contentsline {subsection}{\numberline {A.2}P\&E 4.48\_.py}{5}% 
+\contentsline {subsection}{\numberline {A.3}P\&E 2.38\_.py}{6}% 
+\contentsline {subsection}{\numberline {A.4}Chapra Problem 3.10\_.py}{7}% 
+\contentsline {subsection}{\numberline {A.5}Geocode\_.py}{8}% 
+\contentsline {section}{\numberline {B}Figures}{10}% 

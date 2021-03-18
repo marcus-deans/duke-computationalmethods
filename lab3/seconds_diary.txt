@@ -1,0 +1,10 @@
+Running tests for user md374
+Test 1: total_seconds(15) returns 54000
+Test 2: total_seconds( 1) returns  3600
+Test 3: total_seconds( 6) returns 21600
+Test 4: total_seconds(21, 57) returns 79020
+Test 5: total_seconds( 4, 51) returns 17460
+Test 6: total_seconds(23, 22) returns 84120
+Test 7: total_seconds(10, 32,  4) returns 37924
+Test 8: total_seconds( 2, 17,  1) returns  8221
+Test 9: total_seconds( 9, 36, 29) returns 34589

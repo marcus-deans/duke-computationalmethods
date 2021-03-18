@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}P\&E 1.31 - Time}{2}
+\contentsline {section}{\numberline {2}Reworked P\&E 1.31 - More Time}{2}
+\contentsline {section}{\numberline {3}P\&E 1.35 - Triangles}{2}
+\contentsline {section}{\numberline {4}P\&E 1.39 - Football}{2}
+\contentsline {section}{\numberline {5}Random Integers}{3}
+\contentsline {section}{\numberline {6}Random Numbers}{3}
+\contentsline {section}{\numberline {A}Codes}{4}
+\contentsline {subsection}{\numberline {A.1}keep\_time.py}{4}
+\contentsline {subsection}{\numberline {A.2}get\_time.py}{4}
+\contentsline {subsection}{\numberline {A.3}tri\_cal.py}{5}
+\contentsline {subsection}{\numberline {A.4}football.py}{6}
+\contentsline {subsection}{\numberline {A.5}play\_game.py}{6}
+\contentsline {subsection}{\numberline {A.6}gen\_rand.py}{7}
+\contentsline {section}{\numberline {B}Figures}{9}
